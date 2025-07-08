@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Questionário Impressão 3D</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question p {
+      font-weight: bold;
+    }
+    .result {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      font-size: 16px;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Questionário de Impressão 3D</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Qual é o material mais comum usado em impressoras 3D FDM?</p>
+        <label><input type="radio" name="q1" value="certa" required> PLA</label><br>
+        <label><input type="radio" name="q1" value="errada"> Resina</label><br>
+        <label><input type="radio" name="q1" value="errada"> ABS líquido</label><br>
+        <label><input type="radio" name="q1" value="errada"> Nylon</label>
+      </div>
+
+      <div class="question">
+        <p>2. O que significa a sigla FDM?</p>
+        <label><input type="radio" name="q2" value="errada" required> Formação Direta de Moldes</label><br>
+        <label><input type="radio" name="q2" value="certa"> Fused Deposition Modeling</label><br>
+        <label><input type="radio" name="q2" value="errada"> Filamento Derretido Manual</label><br>
+        <label><input type="radio" name="q2" value="errada"> Filamento Direcional Modular</label>
+      </div>
+
+      <div class="question">
+        <p>3. O que é a mesa aquecida de uma impressora 3D?</p>
+        <label><input type="radio" name="q3" value="certa" required> Uma base que aquece para evitar deformações na peça</label><br>
+        <label><input type="radio" name="q3" value="errada"> O local onde o filamento é derretido</label><br>
+        <label><input type="radio" name="q3" value="errada"> Uma peça opcional apenas para impressoras SLA</label><br>
+        <label><input type="radio" name="q3" value="errada"> O nome da extrusora da impressora</label>
+      </div>
+
+      <div class="question">
+        <p>4. Qual software é comumente usado para fatiamento (slicer)?</p>
+        <label><input type="radio" name="q4" value="certa" required> PrusaSlicer</label><br>
+        <label><input type="radio" name="q4" value="errada"> AutoCAD</label><br>
+        <label><input type="radio" name="q4" value="errada"> Blender</label><br>
+        <label><input type="radio" name="q4" value="errada"> Illustrator</label>
+      </div>
+
+      <div class="question">
+        <p>5. O que é o “retraction” na impressão 3D?</p>
+        <label><input type="radio" name="q5" value="errada" required> A retração térmica da peça após o resfriamento</label><br>
+        <label><input type="radio" name="q5" value="errada"> Um tipo de falha na extrusora</label><br>
+        <label><input type="radio" name="q5" value="certa"> Um movimento da extrusora para evitar o vazamento de filamento</label><br>
+        <label><input type="radio" name="q5" value="errada"> A volta do eixo Z para o ponto inicial</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+      <div id="resultado" class="result"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // prevenir envio real do formulário
+
+      const respostas = document.querySelectorAll('input[type="radio"]:checked');
+      let acertos = 0;
+
+      respostas.forEach(resposta => {
+        if (resposta.value === 'certa') {
+          acertos++;
+        }
+      });
+
+      let nivel = '';
+      if (acertos <= 2) {
+        nivel = 'Iniciante';
+      } else if (acertos <= 4) {
+        nivel = 'Intermediário';
+      } else {
+        nivel = 'Avançado';
+      }
+
+      document.getElementById('resultado').textContent = `Você acertou ${acertos} de 5. Nível: ${nivel}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+🟢 INICIANTE (1 a 10)
+Questões básicas para quem está começando.
+
+1. O que é uma impressora 3D?
+a) Um scanner de objetos físicos
+b) Um tipo de impressora a jato de tinta
+c) Um equipamento que cria objetos camada por camada
+d) Uma ferramenta de corte a laser
+e) Uma impressora fotográfica de alta resolução
+✅ Resposta correta: c
+
+2. Qual é o material mais utilizado em impressoras FDM?
+a) Nylon
+b) Resina
+c) PLA
+d) Madeira
+e) Borracha
+✅ Resposta correta: c
+
+3. Qual software é usado para “fatiar” um modelo 3D antes da impressão?
+a) Photoshop
+b) Cura
+c) Word
+d) Illustrator
+e) Paint
+✅ Resposta correta: b
+
+4. O que significa a sigla FDM?
+a) Fundição Direta de Metal
+b) Fusão Digital Modular
+c) Fused Deposition Modeling
+d) Formatação Dimensional Mecânica
+e) Fabricação de Dados Mecânicos
+✅ Resposta correta: c
+
+5. Para que serve a mesa aquecida em uma impressora 3D?
+a) Aumentar a temperatura do ambiente
+b) Fazer a limpeza automática da peça
+c) Ajudar na aderência da peça à mesa
+d) Esfriar o bico da extrusora
+e) Controlar a altura do eixo Z
+✅ Resposta correta: c
+
+6. Qual dos itens abaixo é um formato comum de arquivo 3D?
+a) .docx
+b) .mp3
+c) .stl
+d) .jpg
+e) .html
+✅ Resposta correta: c
+
+7. O que é “nivelamento da mesa”?
+a) Ajustar o eixo X
+b) Limpar o bico da impressora
+c) Garantir que a distância entre o bico e a mesa esteja correta
+d) Ligar a impressora
+e) Ajustar a cor do filamento
+✅ Resposta correta: c
+
+8. O que significa extrusora?
+a) Componente que remove as peças impressas
+b) Parte que aquece o filamento
+c) Parte que empurra o filamento até o bico
+d) Software de modelagem 3D
+e) Parte que segura o cartão SD
+✅ Resposta correta: c
+
+9. Qual é o nome do bico por onde sai o filamento fundido?
+a) Cooler
+b) Nozzle
+c) Tensor
+d) Carregador
+e) Tray
+✅ Resposta correta: b
+
+10. Qual problema é causado por má aderência à mesa?
+a) Stringing
+b) Overextrusion
+c) Warping
+d) Retração
+e) Resfriamento excessivo
+✅ Resposta correta: c
+
+🟡 INTERMEDIÁRIO (11 a 20)
+Questões para quem já tem alguma experiência.
+
+11. O que é o “retraction” na impressão 3D?
+a) Falha de extrusão
+b) Retração do material durante o resfriamento
+c) Movimento reverso do filamento para evitar fios
+d) Redução da velocidade de impressão
+e) Reinício da impressão após pausa
+✅ Resposta correta: c
+
+12. Qual a finalidade do “brim”?
+a) Economizar filamento
+b) Fazer suporte lateral
+c) Aumentar a aderência da base da peça
+d) Controlar a temperatura da peça
+e) Melhorar acabamento da camada superior
+✅ Resposta correta: c
+
+13. O que é underextrusion?
+a) Excesso de plástico extrudado
+b) Impressão muito rápida
+c) Quantidade insuficiente de filamento sendo extrudado
+d) Impressão com falhas de suporte
+e) Altura de camada muito alta
+✅ Resposta correta: c
+
+14. Como a velocidade de impressão afeta a peça?
+a) Não afeta
+b) Apenas muda a temperatura
+c) Pode afetar a qualidade e gerar falhas
+d) Torna a peça mais leve
+e) Diminui o tempo de resfriamento
+✅ Resposta correta: c
+
+15. Para que serve o “raft”?
+a) Economizar filamento
+b) Adicionar uma borda externa
+c) Criar uma base entre a peça e a mesa
+d) Evitar stringing
+e) Controlar o eixo Z
+✅ Resposta correta: c
+
+16. O que é uma impressora 3D do tipo SLA?
+a) Impressora com laser de corte
+b) Impressora com motor linear
+c) Impressora que utiliza resina e luz UV
+d) Impressora a jato de tinta modificada
+e) Impressora com dupla extrusora
+✅ Resposta correta: c
+
+17. O que é "cura" na impressão 3D com resina?
+a) Processo de nivelamento automático
+b) Fase de resfriamento do bico
+c) Endurecimento da peça com luz UV
+d) Nome do slicer
+e) Tipo de filamento usado
+✅ Resposta correta: c
+
+18. Qual é uma vantagem do PETG sobre o PLA?
+a) Mais frágil
+b) Mais difícil de aderir
+c) Melhor resistência térmica
+d) Menor qualidade de superfície
+e) Precisa de mesa fria
+✅ Resposta correta: c
+
+19. Qual o nome do comando G-code que movimenta o eixo Z?
+a) G28
+b) M104
+c) G1 Z
+d) M82
+e) G92
+✅ Resposta correta: c
+
+20. Qual função melhora o acabamento superior da peça?
+a) Raft
+b) Wall thickness
+c) Top layer count
+d) Stringing
+e) Cooling fan off
+✅ Resposta correta: c
+
+🔴 AVANÇADO (21 a 30)
+Questões para usuários experientes.
+
+21. O que é o “linear advance” no Marlin firmware?
+a) Redução de ruído do motor
+b) Compensação de temperatura ambiente
+c) Ajuste dinâmico da extrusão durante acelerações
+d) Atualização automática de G-code
+e) Reconfiguração de drivers
+✅ Resposta correta: c
+
+22. Qual falha está relacionada à má calibração de “steps/mm”?
+a) Peças desalinhadas
+b) Superaquecimento do bico
+c) Dimensões incorretas nas peças
+d) Adesão excessiva
+e) Desligamento inesperado
+✅ Resposta correta: c
+
+23. O que o comando G29 realiza?
+a) Desativa o motor do eixo Z
+b) Inicia o nivelamento automático da mesa
+c) Retração do filamento
+d) Troca de extrusora
+e) Envia temperatura ao hotend
+✅ Resposta correta: b
+
+24. Qual sensor é usado para nivelamento automático?
+a) NTC
+b) GPS
+c) BLTouch
+d) Servo
+e) ESP32
+✅ Resposta correta: c
+
+25. O que é “ghosting” em impressão 3D?
+a) Impressão de peça invisível
+b) Vazamento de resina
+c) Marcas repetidas por vibração mecânica
+d) Peça descolando da mesa
+e) Camadas com falhas de preenchimento
+✅ Resposta correta: c
+
+26. Como evitar warping ao imprimir ABS?
+a) Usar ventilador sempre ligado
+b) Imprimir em ambiente frio
+c) Usar mesa aquecida e câmara fechada
+d) Reduzir a temperatura do bico
+e) Diminuir a altura de camada
+✅ Resposta correta: c
+
+27. O que é “jerk” no Marlin firmware?
+a) Movimento inicial súbito ao mudar de direção
+b) Quantidade de filamento inicial
+c) Ruído ao final da impressão
+d) Taxa de resfriamento
+e) Temperatura máxima permitida
+✅ Resposta correta: a
+
+28. O que é um hotend “all-metal”?
+a) Com bico de plástico
+b) Que usa peça de madeira
+c) Que permite impressão em altas temperaturas
+d) Que só imprime com PLA
+e) Que aquece com laser
+✅ Resposta correta: c
+
+29. Qual a principal causa de stringing?
+a) Falta de nivelamento
+b) Resfriamento excessivo
+c) Retração mal configurada
+d) Velocidade muito baixa
+e) Cura insuficiente
+✅ Resposta correta: c
+
+30. Para que serve o comando M600?
+a) Aquecer a mesa
+b) Mover o eixo Y
+c) Trocar de filamento durante a impressão
+d) Parar o ventilador
+e) Retrair o bico para home
+✅ Resposta correta: c

@@ -67,7 +67,11 @@
     </div>
 
     <h1 style="text-align: center;">Autoavaliação Impressão 3D</h1>
+    <p>A autoavaliação é uma etapa essencial no processo de ingresso e direcionamento no curso de Impressão 3D. Por meio do preenchimento cuidadoso e honesto das questões propostas, conseguimos entender melhor o seu nível de conhecimento atual nas diversas áreas envolvidas, como modelagem, fatiamento, impressão, manutenção e finalização.
+    Essa nota final será utilizada para definir qual o seu nível dentro do curso – iniciante, intermediário ou avançado – permitindo que você seja direcionado para uma grade de conteúdo compatível com sua experiência e habilidades.</p>
     
+    <br>
+    <br>
     <form id="quizForm">
       <div class="field">
         <label for="nome">Nome do Candidato</label>
@@ -78,47 +82,105 @@
         <label for="data">Data da Avaliação</label>
         <input type="date" id="data" name="data" required>
       </div>
+      
+      <br>
+      <br>
 
-      <!-- PERGUNTAS -->
+      <!-- PERGUNTAS INICIANTES -->
       <div class="question">
-        <p>1. Qual é o material mais comum usado em impressoras 3D FDM?</p>
-        <label><input type="radio" name="q1" value="certa" required> PLA</label><br>
-        <label><input type="radio" name="q1" value="errada"> Resina</label><br>
-        <label><input type="radio" name="q1" value="errada"> ABS líquido</label><br>
-        <label><input type="radio" name="q1" value="errada"> Nylon</label>
+        <p>1. O que é uma impressora 3D?</p>
+        <label><input type="radio" name="q1" value="errada" required> Um scanner de objetos físicos</label><br>
+        <label><input type="radio" name="q1" value="errada"> Um tipo de impressora a jato de tinta</label><br>
+        <label><input type="radio" name="q1" value="certa"> Um equipamento que cria objetos camada por camada</label><br>
+        <label><input type="radio" name="q1" value="errada"> Uma ferramenta de corte a laser</label><br>
+        <label><input type="radio" name="q1" value="errada"> Uma impressora fotográfica de alta resolução</label>
+      </div>
+      
+      <div class="question">
+        <p>2. Qual é o material mais utilizado em impressoras FDM?</p>
+        <label><input type="radio" name="q2" value="errada" required> Nylon</label><br>
+        <label><input type="radio" name="q2" value="errada"> Resina</label><br>
+        <label><input type="radio" name="q2" value="certa"> PLA</label><br>
+        <label><input type="radio" name="q2" value="errada"> Madeira</label><br>
+        <label><input type="radio" name="q2" value="errada"> Borracha</label>
       </div>
 
       <div class="question">
-        <p>2. O que significa a sigla FDM?</p>
-        <label><input type="radio" name="q2" value="errada" required> Formação Direta de Moldes</label><br>
-        <label><input type="radio" name="q2" value="certa"> Fused Deposition Modeling</label><br>
-        <label><input type="radio" name="q2" value="errada"> Filamento Derretido Manual</label><br>
-        <label><input type="radio" name="q2" value="errada"> Filamento Direcional Modular</label>
+        <p>3. Qual software é usado para “fatiar” um modelo 3D antes da impressão?</p>
+        <label><input type="radio" name="q3" value="errada" required> Photoshop</label><br>
+        <label><input type="radio" name="q3" value="certa"> Cura</label><br>
+        <label><input type="radio" name="q3" value="errada"> Word</label><br>
+        <label><input type="radio" name="q3" value="errada"> Illustrator</label><br>
+        <label><input type="radio" name="q3" value="errada"> Paint</label>
       </div>
 
       <div class="question">
-        <p>3. O que é a mesa aquecida de uma impressora 3D?</p>
-        <label><input type="radio" name="q3" value="certa" required> Uma base que aquece para evitar deformações na peça</label><br>
-        <label><input type="radio" name="q3" value="errada"> O local onde o filamento é derretido</label><br>
-        <label><input type="radio" name="q3" value="errada"> Uma peça opcional apenas para impressoras SLA</label><br>
-        <label><input type="radio" name="q3" value="errada"> O nome da extrusora da impressora</label>
+        <p>4. O que significa a sigla FDM?</p>
+        <label><input type="radio" name="q4" value="errada" required> Fundição Direta de Metal</label><br>
+        <label><input type="radio" name="q4" value="errada"> Fusão Digital Modular</label><br>
+        <label><input type="radio" name="q4" value="certa"> Fused Deposition Modeling</label><br>
+        <label><input type="radio" name="q4" value="errada"> Formatação Dimensional Mecânica</label><br>
+        <label><input type="radio" name="q4" value="errada"> Fabricação de Dados Mecânicos</label>
       </div>
 
       <div class="question">
-        <p>4. Qual software é comumente usado para fatiamento (slicer)?</p>
-        <label><input type="radio" name="q4" value="certa" required> PrusaSlicer</label><br>
-        <label><input type="radio" name="q4" value="errada"> AutoCAD</label><br>
-        <label><input type="radio" name="q4" value="errada"> Blender</label><br>
-        <label><input type="radio" name="q4" value="errada"> Illustrator</label>
+        <p>5. Para que serve a mesa aquecida em uma impressora 3D?</p>
+        <label><input type="radio" name="q5" value="errada" required> Aumentar a temperatura do ambiente</label><br>
+        <label><input type="radio" name="q1" value="errada"> Fazer a limpeza automática da peça</label><br>
+        <label><input type="radio" name="q1" value="certa"> Ajudar na aderência da peça à mesa</label><br>
+        <label><input type="radio" name="q1" value="errada"> Esfriar o bico da extrusora</label><br>
+        <label><input type="radio" name="q1" value="errada"> Controlar a altura do eixo Z</label>
+      </div>
+      
+      <div class="question">
+        <p>6. Qual dos itens abaixo é um formato comum de arquivo 3D?</p>
+        <label><input type="radio" name="q1" value="errada" required> .docx</label><br>
+        <label><input type="radio" name="q1" value="errada"> .mp3</label><br>
+        <label><input type="radio" name="q1" value="errada"> .impressao3d</label><br>
+        <label><input type="radio" name="q1" value="errada"> .jpg</label><br>
+        <label><input type="radio" name="q1" value="certa"> .stl</label>
+      </div>
+            
+      <div class="question">
+        <p>7. O que é “nivelamento da mesa”?</p>
+        <label><input type="radio" name="q1" value="errada" required> Ajustar o eixo X</label><br>
+        <label><input type="radio" name="q1" value="errada"> Deixar a mesa onde a impressora vai ficar, bem nivelada</label><br>
+        <label><input type="radio" name="q1" value="certa"> Garantir que a distância entre o bico e a mesa esteja correta</label><br>
+        <label><input type="radio" name="q1" value="errada"> Ligar a impressora</label><br>
+        <label><input type="radio" name="q1" value="errada"> Ajustar a cor do filamento</label>
       </div>
 
       <div class="question">
-        <p>5. O que é o “retraction” na impressão 3D?</p>
-        <label><input type="radio" name="q5" value="errada" required> A retração térmica da peça após o resfriamento</label><br>
-        <label><input type="radio" name="q5" value="errada"> Um tipo de falha na extrusora</label><br>
-        <label><input type="radio" name="q5" value="certa"> Um movimento da extrusora para evitar o vazamento de filamento</label><br>
-        <label><input type="radio" name="q5" value="errada"> A volta do eixo Z para o ponto inicial</label>
+        <p>8. O que significa extrusora?</p>
+        <label><input type="radio" name="q1" value="errada" required> Componente que remove as peças impressas</label><br>
+        <label><input type="radio" name="q1" value="errada"> Parte que aquece o filamento</label><br>
+        <label><input type="radio" name="q1" value="errada"> Parte que colocar o filamento</label><br>
+        <label><input type="radio" name="q1" value="errada"> Software de modelagem 3D</label><br>
+        <label><input type="radio" name="q1" value="certa"> Parte que empurra o filamento até o bico</label>
       </div>
+
+      <div class="question">
+        <p>9. Qual é o nome do bico por onde sai o filamento fundido?</p>
+        <label><input type="radio" name="q1" value="errada" required> Cooler</label><br>
+        <label><input type="radio" name="q1" value="certa"> Nozzle</label><br>
+        <label><input type="radio" name="q1" value="errada"> Tensor</label><br>
+        <label><input type="radio" name="q1" value="errada"> Carregador</label><br>
+        <label><input type="radio" name="q1" value="errada"> extrusor</label>
+      </div>
+
+      <div class="question">
+        <p>10. Qual problema é causado por má aderência à mesa?</p>
+        <label><input type="radio" name="q1" value="errada" required> Filamento com problema</label><br>
+        <label><input type="radio" name="q1" value="errada"> Falta de temperatura na mesa</label><br>
+        <label><input type="radio" name="q1" value="certa"> Warping</label><br>
+        <label><input type="radio" name="q1" value="errada"> Retração</label><br>
+        <label><input type="radio" name="q1" value="errada"> Resfriamento excessivo</label>
+      </div>
+
+      <!-- PERGUNTAS INICIANTES-->
+
+
+
 
       <button type="submit">Enviar para WhatsApp</button>
       <div id="resultado" class="result"></div>
@@ -144,8 +206,8 @@
         if (r.value === 'certa') acertos++;
       });
 
-      const erros = 5 - acertos;
-      const nivel = acertos <= 2 ? 'Iniciante' : (acertos <= 4 ? 'Intermediário' : 'Avançado');
+      const erros = 10 - acertos;
+      const nivel = acertos <= 3 ? 'Iniciante' : (acertos <= 7 ? 'Intermediário' : 'Avançado');
 
       const mensagem = `*Questionário de Impressão 3D*%0A` +
         `Nome: ${nome}%0A` +
@@ -158,7 +220,7 @@
       window.open(`https://wa.me/${telefone}?text=${mensagem}`, '_blank');
 
       document.getElementById('resultado').textContent =
-        `Você acertou ${acertos} de 5. Nível: ${nivel}`;
+        `Você acertou ${acertos} de 10. Nível: ${nivel}`;
     });
   </script>
 </body>
